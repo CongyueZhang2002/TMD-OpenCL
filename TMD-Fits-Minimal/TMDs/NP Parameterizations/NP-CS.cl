@@ -6,29 +6,51 @@
 #define powf(x,y) pow(x,y)
 #define sqrtf(x) sqrt(x)
 
-inline float bstar_func(float b, float Q) {
+//inline float mustar_func(float b, float Q) {
+//
+//    float t  = b / bmax;
+//    float t2 = t * t;
+//    float t4 = t2 * t2;
+//    float denom = sqrt(sqrt(1.0f + t4));
+//    float bstar = b / denom;
 
-    float t  = b / bmax;
-    float t2 = t * t;
-    float t4 = t2 * t2;
+//    float mu = bmax / bstar;
+//    return mu; 
+//}
 
-    float denom = sqrt(sqrt(1.0f + t4));
+inline float mustar_func(float b, float Q) {
 
-    return b / denom;
+    float mu = bmax / b;
+    return max(mu, 1.0f); 
 }
 
 typedef struct {
     float g2;
 } Params_Struct;
 
-inline float8 NP_f_func(float x, float b, __constant Params_Struct* params)
+inline float2 NP_f_func(float x, float b, __constant Params_Struct* params)
 {
     float g2 = params->g2;
-    float b2 = b*b;
 
-    float gK = -0.5f * (g2*g2) * b2;
+    float gK = -0.5f * (g2*g2) * b*b;
 
     float SNP_ze = 0.5f * gK;
 
-    return (float8)(1.0f, 1.0f, 1.0f, 1.0f, 1.0f, SNP_ze, 0.0f, 0.0f);
+    return (float2)(1.0f, SNP_ze);
+}
+
+__kernel void NP_f_vec(
+    __global const float* x,
+    __global const float* b,
+    int N,
+    __constant Params_Struct* P,
+    __global float* out_mu,
+    __global float* out_ze
+){
+    int i = get_global_id(0);
+    if (i >= N) return;
+
+    float2 r = NP_f_func(x[i], b[i], P);
+    out_mu[i] = r.x;
+    out_ze[i] = r.y;
 }

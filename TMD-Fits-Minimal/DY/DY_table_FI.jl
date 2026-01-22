@@ -13,7 +13,7 @@ Params = make_params(initial_params)
 #---------------------------------------------------------------------------------------------------------------------
 
 source_NP = read(abspath(joinpath(@__DIR__, "..", "TMDs", "NP Parameterizations", "$NP_name")), String)
-source_DY = read(abspath(joinpath(@__DIR__, "DY_table_FD.cl")), String)
+source_DY = read(abspath(joinpath(@__DIR__, "DY_table_FI.cl")), String)
 programs = cl.Program(; source = string(source_NP, "\n\n", source_DY)) |>
         p -> cl.build!(p; options="-cl-fast-relaxed-math -cl-mad-enable -cl-std=CL2.0")
 

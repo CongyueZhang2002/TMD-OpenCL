@@ -21,34 +21,19 @@ programs = cl.Program(; source = string(source_NP, "\n\n", source_DY)) |>
 #   Load all tables 
 #---------------------------------------------------------------------------------------------------------------------
 
-using JLD2
-
-# Tuple{Vector{Tuple{Tuple{xp,xN,Q},Matrix{b,pert}}}, isoscalarity}
-const table_type = Tuple{
-    Vector{Tuple{Tuple{Float32,Float32,Float32}, Matrix{Float32}}},
-    Float64,
-}
-
+# Tuple{Vector{Tuple{Tuple{xp,xN,Q},Matrix{b,pert}}},isoscalarity}
+const table_type = Tuple{Vector{Tuple{Tuple{Float32,Float32,Float32},Matrix{Float32}}},Float64}
 const tables = Dict{String, table_type}()
-
 function load_table(rel_path::AbstractString)
-    path = isabspath(rel_path) ? rel_path : joinpath(@__DIR__, rel_path)
-    obj = load(path, "obj")::table_type
-    tables[rel_path] = obj
-    return nothing
+    tables[rel_path] = open(isabspath(rel_path) ? rel_path : joinpath(@__DIR__, rel_path), "r") do io
+        deserialize(io)::table_type
+    end
+    nothing
 end
 
-root = joinpath(@__DIR__, "..", "Tables_JLD2", table_name, "DY")
-
-all_paths = sort([
-    joinpath(d, f)
-    for (d, _, fs) in walkdir(root)
-    for f in fs
-    if endswith(f, ".jld2")
-])
-
+root = abspath(joinpath(@__DIR__, "../Tables/$table_name/DY"))
+all_paths = sort([joinpath(d, f) for (d,_,fs) in walkdir(root) for f in fs if endswith(f, ".jls")])
 rel_paths = [relpath(p, @__DIR__) for p in all_paths]
-
 foreach(load_table, rel_paths)
 
 #---------------------------------------------------------------------------------------------------------------------

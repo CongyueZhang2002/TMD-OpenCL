@@ -2,6 +2,7 @@
 # NP
 #----------------------------------------------------------------------------
 
+const flavor_scheme = "FI"
 const NP_name = "NP-CS.cl"
 
 struct Params_Struct
@@ -9,13 +10,23 @@ struct Params_Struct
     #alpha::Float32
     #beta::Float32
 end
-initial_params = [0.331]
+initial_params = [0.5]
+
+# 0.337 CT18ZNNLO
+# 0.366 HERAPDF20_NNLO_EIG
+# 0.381 NNPDF40pch
+
+bounds_raw = [
+    (0.0, 1.0),      
+]
 
 #----------------------------------------------------------------------------
-# Pert Tables
+# PDF
 #----------------------------------------------------------------------------
 
-const table_name = "Default-FD-HERA20"
+const table_name = "MSHT20N3LO-CS"
+const pdf_name = "approximate"
+const error_sets_name = "MSHT20N3LO-CS"
 
 #----------------------------------------------------------------------------
 # Data Set

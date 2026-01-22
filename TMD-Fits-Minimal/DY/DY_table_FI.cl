@@ -9,7 +9,7 @@ inline float DY_NP_func(float b, float xp, float xN, float Q, __constant Params_
     float NP_Suda = NP_p.s0 * NP_n.s0;
     float NP_CS = NP_p.s1 + NP_n.s1;
 
-    float log_Zeta = 2.0f * log(Q * bstar_func(b, Q) * db0); 
+    float log_Zeta = 2.0f * log(Q/mustar_func(b,Q)); 
     float NP_Zeta = exp(NP_CS * log_Zeta);
 
     return NP_Suda * NP_Zeta;
