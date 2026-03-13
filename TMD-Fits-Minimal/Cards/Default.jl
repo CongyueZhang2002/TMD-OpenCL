@@ -66,7 +66,7 @@ frozen_indices = [1,5,6,9,10]#[3,4,5,6,7,8,9,10]
 
 const table_name = "MSHT20N3LO-CS"
 const pdf_name = "approximate"
-const error_sets_name = "MSHT20N3LO-CS"
+const error_sets_name = "MSHT20N3LO-MC"
 
 #----------------------------------------------------------------------------
 # Data Set
