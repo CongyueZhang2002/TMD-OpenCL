@@ -1,0 +1,49 @@
+{
+  "candidate": "baseline_unfrozen",
+  "label": "0112 baseline",
+  "fit_name": "AutoBaselineUnfrozen",
+  "param_names": [
+    "g2",
+    "bmax_CS",
+    "power_CS",
+    "a1",
+    "a2",
+    "a3",
+    "a4",
+    "b1",
+    "b2",
+    "b3",
+    "a"
+  ],
+  "full_params": [
+    0.5077089722187393,
+    1.272538004219955,
+    0.9078091518051198,
+    3.289140682587954,
+    0.053204399931278346,
+    -0.7733106134384595,
+    0.005999356992035021,
+    -0.4361943775788255,
+    0.8632100552049433,
+    -1.5517079973691779,
+    0.00023323740802064187
+  ],
+  "metrics": {
+    "chi2dN_total": 0.8351733705755989,
+    "chi2dN_collider": 1.0144822122713228,
+    "chi2dN_fixed_target": 0.5933781143495475,
+    "highE_weighted_chi2dN": 1.6328732802851793,
+    "highE_mean_ratio_first3": 1.0147687083097547,
+    "highE_mean_absdev_first3": 0.05501882486826932,
+    "highE_mean_signed_first3": 0.014768708309754757,
+    "highE_mean_shortfall_first3": 0.020125058279257278,
+    "highE_mean_overshoot_first3": 0.03489376658901203,
+    "cms_highmass_mean_ratio_first3": 1.08723441647253,
+    "cms_highmass_mean_absdev_first3": 0.0872344164725301,
+    "cms_highmass_mean_signed_first3": 0.0872344164725301,
+    "zlike_mean_ratio_first3": 0.9664582362012379,
+    "zlike_mean_absdev_first3": 0.033541763798762135,
+    "zlike_mean_signed_first3": -0.033541763798762135,
+    "compute_s": 0.0451914
+  }
+}

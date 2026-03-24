@@ -1,0 +1,14 @@
+{
+  "model": "poly_bstar_cslog_42best",
+  "label": "Poly-x bstar + CSlog (4-2 best, no bump)",
+  "fit_name": "Art23FamilyMuPolyBstarCSLog42Best",
+  "n_total": 465,
+  "chi2dN_total": 1.029357899416145,
+  "chi2_total": 478.65142322850744,
+  "highE_mean_absdev_first3": 0.051937849827369174,
+  "highE_mean_shortfall_first3": 0.010809790774811123,
+  "hessian_evals": 129,
+  "grad_norm_log10": 0.0686934890524036,
+  "hessian_min_eig": -19484.847764740385,
+  "hessian_max_eig": 707532.5742449285
+}

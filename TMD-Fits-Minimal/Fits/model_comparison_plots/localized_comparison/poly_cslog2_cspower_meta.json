@@ -1,0 +1,45 @@
+{
+  "candidate": "poly_cslog2_cspower",
+  "label": "Poly-x + CSlog2 + powerCS",
+  "fit_name": "PolyCSLog2CSPower",
+  "param_names": [
+    "lambda1",
+    "lambda2",
+    "lambda3",
+    "lambda4",
+    "BNP",
+    "powerCS",
+    "c0",
+    "c1",
+    "c2"
+  ],
+  "full_params": [
+    1.0968982873699482,
+    1.1528975334240414,
+    -1.728827137214303,
+    0.20460491816445714,
+    0.690408586757603,
+    0.13539413732329308,
+    0.10774131502086141,
+    0.10335199393433113,
+    0.05637697450787643
+  ],
+  "metrics": {
+    "chi2dN_total": 0.8209763881030802,
+    "chi2dN_collider": 0.8935033266038079,
+    "chi2dN_fixed_target": 0.7231749104278568,
+    "highE_weighted_chi2dN": 1.545114407722393,
+    "highE_mean_ratio_first3": 1.017435127064224,
+    "highE_mean_absdev_first3": 0.05204653079484984,
+    "highE_mean_signed_first3": 0.017435127064223965,
+    "highE_mean_shortfall_first3": 0.017305701865312936,
+    "highE_mean_overshoot_first3": 0.0347408289295369,
+    "cms_highmass_mean_ratio_first3": 1.0868520723238422,
+    "cms_highmass_mean_absdev_first3": 0.08685207232384225,
+    "cms_highmass_mean_signed_first3": 0.08685207232384225,
+    "zlike_mean_ratio_first3": 0.9711571635578119,
+    "zlike_mean_absdev_first3": 0.028842836442188227,
+    "zlike_mean_signed_first3": -0.028842836442188227,
+    "compute_s": 0.0387332
+  }
+}

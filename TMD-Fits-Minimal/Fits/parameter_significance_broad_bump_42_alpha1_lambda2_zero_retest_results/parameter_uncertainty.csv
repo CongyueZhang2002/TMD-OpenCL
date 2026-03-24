@@ -1,0 +1,12 @@
+model,label,param,value,reference,is_free,sigma_norm,sigma_phys,z_vs_reference,signal_to_sigma,frac_uncertainty
+broad_bump_42_alpha1_lambda2_zero_retest,"Broad bump 4-2, no lambda2 retest",lambda1,0.980700658,0.0,True,0.0150004327628359,0.1197034534474305,8.19275158532238,8.19275158532238,0.12205911403337766
+broad_bump_42_alpha1_lambda2_zero_retest,"Broad bump 4-2, no lambda2 retest",lambda2,0.0,0.0,False,,,,,
+broad_bump_42_alpha1_lambda2_zero_retest,"Broad bump 4-2, no lambda2 retest",lambda3,-1.966357021,0.0,True,0.02621490923134204,0.5242981846268409,-3.7504555206490306,3.7504555206490306,0.26663427802149914
+broad_bump_42_alpha1_lambda2_zero_retest,"Broad bump 4-2, no lambda2 retest",lambda4,0.03725458849,0.0,True,0.006914616183532857,0.006914616183532857,5.3878028080172715,5.3878028080172715,0.18560441716834158
+broad_bump_42_alpha1_lambda2_zero_retest,"Broad bump 4-2, no lambda2 retest",alpha,1.0,1.0,False,,,,,
+broad_bump_42_alpha1_lambda2_zero_retest,"Broad bump 4-2, no lambda2 retest",logx0,-5.046900927,,True,0.011819290890023421,0.09462958725864137,,,0.018750038613278563
+broad_bump_42_alpha1_lambda2_zero_retest,"Broad bump 4-2, no lambda2 retest",sigx,0.8384322341,,True,0.019395682698068916,0.03685179712633094,,,0.04395322081800545
+broad_bump_42_alpha1_lambda2_zero_retest,"Broad bump 4-2, no lambda2 retest",amp,-0.360806494,0.0,True,0.022202896519151912,0.13321737911491147,-2.708404086592736,2.708404086592736,0.3692211235946088
+broad_bump_42_alpha1_lambda2_zero_retest,"Broad bump 4-2, no lambda2 retest",BNP,1.434697456,,True,0.02177382454071662,0.08927268061693815,,,0.062224046082743
+broad_bump_42_alpha1_lambda2_zero_retest,"Broad bump 4-2, no lambda2 retest",c0,0.07211146779,0.0,True,0.010392331945369747,0.002598082986342437,27.755644515234682,27.755644515234682,0.036028707582384335
+broad_bump_42_alpha1_lambda2_zero_retest,"Broad bump 4-2, no lambda2 retest",c1,0.02675503832,0.0,True,0.005090844176204493,0.0012727110440511231,21.022083877607404,21.022083877607404,0.04756902340520076

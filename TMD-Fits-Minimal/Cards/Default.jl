@@ -33,6 +33,7 @@ initial_params = [
     0.0      # a  (alpha; a=1 => bstar=b)
 ]
 initial_params = [0.511, 1.123, 0.908, 2.97, -0.0553, 0.0, 0.0, -3.55, 0.168, 0.0, 0.0]
+#initial_params = [0.5, 1.123, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 
 # bounds in the order above
 bounds_raw = [
@@ -55,7 +56,7 @@ bounds_raw = [
 
 #initial_params = [0.477, 1.48, 0.401, -1.16, -0.644, 0.308, -0.11, 2.08, -2.63, 6.61, 1.46]
 
-frozen_indices = [1,5,6,9,10]#[3,4,5,6,7,8,9,10]
+frozen_indices = [5,6,9,10]#[3,4,5,6,7,8,9,10]
 #----------------------------------------------------------------------------
 # PDF
 #----------------------------------------------------------------------------
@@ -64,7 +65,7 @@ frozen_indices = [1,5,6,9,10]#[3,4,5,6,7,8,9,10]
 #const pdf_name = "approximate"
 #const error_sets_name = "HERA20-ES"
 
-const table_name = "MSHT20N3LO-CS"
+const table_name = "MSHT20N3LO-MC-0-2"
 const pdf_name = "approximate"
 const error_sets_name = "MSHT20N3LO-MC"
 

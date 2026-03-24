@@ -1,0 +1,13 @@
+{
+  "model": "reduced_loggauss_powerseed",
+  "label": "Reduced loggauss power-seed",
+  "n_total": 465,
+  "chi2dN_total": 0.826230982509147,
+  "chi2_total": 384.19740686675334,
+  "highE_mean_absdev_first3": 0.05143438425979511,
+  "highE_mean_shortfall_first3": 0.010446324526694398,
+  "hessian_evals": 163,
+  "grad_norm_log10": 0.028546031348117642,
+  "hessian_min_eig": 2482.595177257692,
+  "hessian_max_eig": 1019673.2283276881
+}

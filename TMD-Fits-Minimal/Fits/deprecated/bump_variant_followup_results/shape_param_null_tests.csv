@@ -1,0 +1,2 @@
+candidate,fixed_map,base_chi2dN,fixed_chi2dN,delta_chi2dN,delta_chi2_total,base_absdev,fixed_absdev,delta_absdev,base_shortfall,fixed_shortfall,delta_shortfall,fit_evals
+reduced_loggauss_power,"{""pshape"": 2.0}",0.826635390967404,0.8268131920562051,0.00017780108880105505,0.0826775062924906,0.051321224132997105,0.05128403718812399,-3.718694487311186e-05,0.01038591928326748,0.010300816904289316,-8.510237897816318e-05,90

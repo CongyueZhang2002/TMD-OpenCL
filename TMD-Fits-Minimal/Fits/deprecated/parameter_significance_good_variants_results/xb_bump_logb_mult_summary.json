@@ -1,0 +1,13 @@
+{
+  "model": "xb_bump_logb_mult",
+  "label": "Localized x-b logb multiplier",
+  "n_total": 465,
+  "chi2dN_total": 0.8047519970454953,
+  "chi2_total": 374.2096786261553,
+  "highE_mean_absdev_first3": 0.05133392427903052,
+  "highE_mean_shortfall_first3": 0.010753731448796648,
+  "hessian_evals": 289,
+  "grad_norm_log10": 0.11954296292105174,
+  "hessian_min_eig": -12183.50060498797,
+  "hessian_max_eig": 807921.2402328629
+}

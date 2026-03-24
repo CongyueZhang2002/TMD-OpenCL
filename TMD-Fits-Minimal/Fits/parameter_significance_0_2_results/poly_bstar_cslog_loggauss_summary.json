@@ -1,0 +1,13 @@
+{
+  "model": "poly_bstar_cslog_loggauss",
+  "label": "Poly-x bstar + CSlog + loggauss",
+  "n_total": 465,
+  "chi2dN_total": 0.8221166366710688,
+  "chi2_total": 382.284236052047,
+  "highE_mean_absdev_first3": 0.051243420553660976,
+  "highE_mean_shortfall_first3": 0.01073994770734615,
+  "hessian_evals": 243,
+  "grad_norm_log10": 0.033533768079439044,
+  "hessian_min_eig": -33475.36795086785,
+  "hessian_max_eig": 1035446.7452082636
+}

@@ -1,0 +1,4 @@
+candidate,label,chi2dN_total,highE_mean_absdev_first3,highE_mean_shortfall_first3
+reduced_loggauss_powerseed,Reduced loggauss,0.8262303684050711,0.051434404241214156,0.010446334190723954
+entangle_window_exp,Window exp entangled,0.833920243276883,0.05089391889362432,0.010851918593820242
+entangle_inside_sech,Inside sech entangled,0.8195275844083068,0.052498935461035415,0.01123547263193368

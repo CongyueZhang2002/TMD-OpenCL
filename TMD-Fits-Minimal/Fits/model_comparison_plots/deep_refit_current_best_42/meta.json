@@ -1,0 +1,43 @@
+{
+  "fit_name": "BroadBump42LogGaussAlpha1NoLambda2",
+  "param_names": [
+    "lambda1",
+    "lambda2",
+    "lambda3",
+    "logx0",
+    "sigx",
+    "amp",
+    "BNP",
+    "c0",
+    "c1"
+  ],
+  "full_params": [
+    0.03678546543100558,
+    0.9995964563234889,
+    -2.0420291163854856,
+    -5.101398793102666,
+    0.8391539898501201,
+    -0.38647034020512105,
+    1.4469086984721615,
+    0.07148069971158534,
+    0.02665757838430512
+  ],
+  "metrics": {
+    "chi2dN_total": 0.9887615355021477,
+    "chi2dN_collider": 0.9164597360310022,
+    "chi2dN_fixed_target": 1.086259416607177,
+    "highE_weighted_chi2dN": 1.3736067676105275,
+    "highE_mean_ratio_first3": 1.032350169080059,
+    "highE_mean_absdev_first3": 0.05243486824992081,
+    "highE_mean_signed_first3": 0.03235016908005868,
+    "highE_mean_shortfall_first3": 0.010042349584931064,
+    "highE_mean_overshoot_first3": 0.04239251866498974,
+    "cms_highmass_mean_ratio_first3": 1.1053785331127486,
+    "cms_highmass_mean_absdev_first3": 0.10537853311274847,
+    "cms_highmass_mean_signed_first3": 0.10537853311274847,
+    "zlike_mean_ratio_first3": 0.9836645930582654,
+    "zlike_mean_absdev_first3": 0.017139091674702362,
+    "zlike_mean_signed_first3": -0.01633540694173452,
+    "compute_s": 0.0375073
+  }
+}

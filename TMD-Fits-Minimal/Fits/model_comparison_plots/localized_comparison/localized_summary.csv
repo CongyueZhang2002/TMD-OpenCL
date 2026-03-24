@@ -1,0 +1,6 @@
+candidate,label,chi2dN_total,highE_mean_absdev_first3,highE_mean_shortfall_first3
+baseline_unfrozen,0112 baseline,0.8351733705755989,0.05501882486826932,0.020125058279257278
+art23_mu_poly_bstar_cslog,Poly-x bstar + CSlog,0.8355869923906141,0.05276569052714571,0.012498705187629567
+poly_bstar_cslog_loggauss,Poly-x bstar + CSlog + loggauss,0.8221619902970602,0.051220154691675825,0.010736997505595225
+poly_cslog2_cspower,Poly-x + CSlog2 + powerCS,0.8209763881030802,0.05204653079484984,0.017305701865312936
+poly_bstar_cslog_cspower,Poly-x bstar + CSlog + powerCS,0.8039268457868273,0.05247326077909278,0.012446804450773737

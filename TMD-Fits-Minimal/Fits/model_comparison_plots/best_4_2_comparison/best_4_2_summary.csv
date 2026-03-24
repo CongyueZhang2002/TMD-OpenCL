@@ -1,0 +1,5 @@
+candidate,label,chi2dN_total,highE_mean_absdev_first3,highE_mean_shortfall_first3
+poly_bstar_cslog_loggauss,0-2 loggauss,0.8221636937310453,0.051220141064266776,0.010736982631575616
+reduced_loggauss_powerseed,0-2 powerseed,0.8262320257018096,0.051434423527049036,0.010446343193710524
+poly_bstar_cslog__MSHT20N3LO-MC-4-2__aggressive,4-2 poly-bstar,1.029354042500972,0.05193782626854422,0.010809776449156764
+poly_bstar_cslog_loggauss__MSHT20N3LO-MC-4-2__aggressive,4-2 best,0.9955386534852959,0.05274089480760804,0.009499679138782165

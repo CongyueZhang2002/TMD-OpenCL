@@ -1,0 +1,13 @@
+{
+  "model": "entangle_window_exp",
+  "label": "Window-exp entangled",
+  "n_total": 465,
+  "chi2dN_total": 0.8339182586364596,
+  "chi2_total": 387.7719902659537,
+  "highE_mean_absdev_first3": 0.050893911976074735,
+  "highE_mean_shortfall_first3": 0.010851918789042332,
+  "hessian_evals": 201,
+  "grad_norm_log10": 0.07872830976446007,
+  "hessian_min_eig": -46234.65694407413,
+  "hessian_max_eig": 1004228.6207210633
+}

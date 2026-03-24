@@ -1,0 +1,14 @@
+{
+  "model": "reduced_loggauss_powerseed",
+  "fit_name": "SigGood_reduced_loggauss_powerseed",
+  "n_total": 465,
+  "chi2dN_total": 0.8262317309161787,
+  "chi2_total": 384.1977548760231,
+  "highE_mean_absdev_first3": 0.05143435344971727,
+  "highE_mean_shortfall_first3": 0.010446309247199869,
+  "rel_step": 0.0005,
+  "hessian_evals": 163,
+  "grad_norm_log10": 0.026657454113397552,
+  "hessian_min_eig": 2457.3539622460903,
+  "hessian_max_eig": 994765.0687058896
+}

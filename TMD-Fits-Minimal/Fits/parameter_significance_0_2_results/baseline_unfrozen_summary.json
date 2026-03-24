@@ -1,0 +1,13 @@
+{
+  "model": "baseline_unfrozen",
+  "label": "0112 baseline",
+  "n_total": 465,
+  "chi2dN_total": 0.833860006896425,
+  "chi2_total": 387.74490320683765,
+  "highE_mean_absdev_first3": 0.05491399418122,
+  "highE_mean_shortfall_first3": 0.020045459239322418,
+  "hessian_evals": 243,
+  "grad_norm_log10": 0.06997688945912875,
+  "hessian_min_eig": -47107.53212120967,
+  "hessian_max_eig": 517424.79485413874
+}

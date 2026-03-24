@@ -1,0 +1,49 @@
+{
+  "candidate": "poly_bstar_cslog_loggauss__MSHT20N3LO-MC-4-2__aggressive",
+  "label": "4-2 best",
+  "fit_name": "AggressiveTableRefit_poly_bstar_cslog_loggauss_4_2",
+  "param_names": [
+    "lambda1",
+    "lambda2",
+    "lambda3",
+    "lambda4",
+    "alpha",
+    "logx0",
+    "sigx",
+    "amp",
+    "BNP",
+    "c0",
+    "c1"
+  ],
+  "full_params": [
+    0.7335047836414214,
+    0.13036483281811864,
+    -1.856614970748213,
+    0.007681306566028834,
+    1.323025069943102,
+    -4.665727218592645,
+    0.22057363924376838,
+    -1.408426945995673,
+    1.4287861263387587,
+    0.07156989892940831,
+    0.026311065183853427
+  ],
+  "metrics": {
+    "chi2dN_total": 0.9955386534852959,
+    "chi2dN_collider": 0.9257017305772558,
+    "chi2dN_fixed_target": 1.0897126858915922,
+    "highE_weighted_chi2dN": 1.2841952928853346,
+    "highE_mean_ratio_first3": 1.0337415365300435,
+    "highE_mean_absdev_first3": 0.05274089480760804,
+    "highE_mean_signed_first3": 0.03374153653004371,
+    "highE_mean_shortfall_first3": 0.009499679138782165,
+    "highE_mean_overshoot_first3": 0.043241215668825876,
+    "cms_highmass_mean_ratio_first3": 1.107641406826719,
+    "cms_highmass_mean_absdev_first3": 0.10764140682671908,
+    "cms_highmass_mean_signed_first3": 0.10764140682671908,
+    "zlike_mean_ratio_first3": 0.9844749563322601,
+    "zlike_mean_absdev_first3": 0.016140553461534018,
+    "zlike_mean_signed_first3": -0.015525043667739867,
+    "compute_s": 0.0421626
+  }
+}

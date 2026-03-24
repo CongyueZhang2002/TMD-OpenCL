@@ -1,0 +1,45 @@
+{
+  "candidate": "reduced_full",
+  "label": "Reduced loggauss",
+  "fit_name": "PolyBstarCSLogLogGaussReduced",
+  "param_names": [
+    "lambda1",
+    "lambda2",
+    "lambda4",
+    "logx0",
+    "sigx",
+    "amp",
+    "BNP",
+    "c0",
+    "c1"
+  ],
+  "full_params": [
+    0.5882525011565694,
+    0.5842634852963527,
+    0.03585691770751531,
+    -4.582506214884906,
+    0.2971306286522416,
+    -0.4423154051555247,
+    1.3992994764848747,
+    0.07930761286959301,
+    0.022652894380060965
+  ],
+  "metrics": {
+    "chi2dN_total": 0.8275760296024601,
+    "chi2dN_collider": 0.8889997222716473,
+    "chi2dN_fixed_target": 0.7447471107000718,
+    "highE_weighted_chi2dN": 1.354369452270295,
+    "highE_mean_ratio_first3": 1.030478519619728,
+    "highE_mean_absdev_first3": 0.051453389938114054,
+    "highE_mean_signed_first3": 0.030478519619728184,
+    "highE_mean_shortfall_first3": 0.010487435159192933,
+    "highE_mean_overshoot_first3": 0.040965954778921114,
+    "cms_highmass_mean_ratio_first3": 1.1018222794466717,
+    "cms_highmass_mean_absdev_first3": 0.10182227944667177,
+    "cms_highmass_mean_signed_first3": 0.10182227944667177,
+    "zlike_mean_ratio_first3": 0.9829160130684325,
+    "zlike_mean_absdev_first3": 0.017874130265742236,
+    "zlike_mean_signed_first3": -0.01708398693156754,
+    "compute_s": 0.0430423
+  }
+}

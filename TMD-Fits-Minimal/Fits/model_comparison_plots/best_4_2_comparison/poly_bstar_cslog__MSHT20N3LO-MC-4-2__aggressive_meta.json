@@ -1,0 +1,43 @@
+{
+  "candidate": "poly_bstar_cslog__MSHT20N3LO-MC-4-2__aggressive",
+  "label": "4-2 poly-bstar",
+  "fit_name": "AggressiveTableRefit_poly_bstar_cslog_4_2",
+  "param_names": [
+    "lambda1",
+    "lambda2",
+    "lambda3",
+    "lambda4",
+    "alpha",
+    "BNP",
+    "c0",
+    "c1"
+  ],
+  "full_params": [
+    2.1690289463226358,
+    0.9245062168873092,
+    -5.698747293631181,
+    0.37495043968175956,
+    0.982812131992918,
+    1.424617325157374,
+    0.07873042071489685,
+    0.026886371767140437
+  ],
+  "metrics": {
+    "chi2dN_total": 1.029354042500972,
+    "chi2dN_collider": 0.9487197764344986,
+    "chi2dN_fixed_target": 1.1380881285603073,
+    "highE_weighted_chi2dN": 1.4158729754581645,
+    "highE_mean_ratio_first3": 1.0303182733702307,
+    "highE_mean_absdev_first3": 0.05193782626854422,
+    "highE_mean_signed_first3": 0.03031827337023069,
+    "highE_mean_shortfall_first3": 0.010809776449156764,
+    "highE_mean_overshoot_first3": 0.041128049819387454,
+    "cms_highmass_mean_ratio_first3": 1.1020640022900328,
+    "cms_highmass_mean_absdev_first3": 0.10206400229003258,
+    "cms_highmass_mean_signed_first3": 0.10206400229003258,
+    "zlike_mean_ratio_first3": 0.9824877874236962,
+    "zlike_mean_absdev_first3": 0.018520375587551978,
+    "zlike_mean_signed_first3": -0.017512212576303903,
+    "compute_s": 0.0400855
+  }
+}

@@ -6,17 +6,18 @@
 #define powf(x,y) pow(x,y)
 #define sqrtf(x) sqrt(x)
 
-//inline float mustar_func(float b, float Q) {
-//
-//    float t  = b / bmax;
-//    float t2 = t * t;
-//    float t4 = t2 * t2;
-//    float denom = sqrt(sqrt(1.0f + t4));
-//    float bstar = b / denom;
+inline float mustar_func_quartic(float b, float Q) {
 
-//    float mu = bmax / bstar;
-//    return mu; 
-//}
+    float t  = b / bmax;
+    float t2 = t * t;
+    float t4 = t2 * t2;
+    float denom = sqrt(sqrt(1.0f + t4));
+    //float denom = sqrt(1.0f + t2);
+    float bstar = b / denom;
+
+    float mu = bmax / bstar;
+    return mu; 
+}
 
 inline float mustar_func(float b, float Q) {
 
@@ -57,11 +58,13 @@ inline float2 NP_f_func(float x, float b, __constant Params_Struct* p)
   float t2 = t*t;
   float t4 = t2*t2;                      
   float bstar = b * powr(1.f + t4, 0.25f*(alpha - 1.f));
+  //float bstar = b * powr(1.f + t2, 0.5f*(alpha - 1.f));
 
   float u = b/bmax_CS; 
   float u2 = u*u; 
   float u4 = u2*u2;    
   float bstar_CS = b * powr(1.f + u4, 0.25f*(power_CS - 1.f));
+  //float bstar_CS = b * powr(1.f + u2, 0.5f*(power_CS - 1.f));
 
   float SNP_mu = sechf(xshape * bstar);
   float SNP_ze = -0.25f * (g2*g2) * (bstar_CS*bstar_CS);

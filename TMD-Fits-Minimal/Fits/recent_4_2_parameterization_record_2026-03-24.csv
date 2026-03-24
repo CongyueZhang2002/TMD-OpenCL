@@ -1,0 +1,11 @@
+branch,label,card,chi2dN_total,highE_mean_absdev_first3,highE_mean_shortfall_first3,status,reason,max_abs_corr
+aggressive_4-2,Sharp bump 4-2 best,PolyBstarCSLogLogGauss42Best.jl,0.995535564998642,0.052740889676148955,0.00949965974368195,keep,Best sharp-bump / shortfall-oriented 4-2 representative,
+aggressive_4-2,No-bump 4-2 best,Art23FamilyMuPolyBstarCSLog42Best.jl,1.0293543989047402,0.05193786796945229,0.010809785975943035,keep,Best no-bump 4-2 representative,
+broad_bump_42,Broad bump alpha=1 best,BroadBump42LogGaussAlpha1Best.jl,0.9901123296521379,0.05188824764275783,0.009655968741503,drop,Superseded by the no-lambda2 broad-bump refit,
+broad_bump_42_prune,Current broad-bump best,BroadBump42LogGaussAlpha1NoLambda2.jl,0.9888852059884288,0.052317695024809346,0.009853276646842428,keep,Main current best 4-2 model,0.9698408119183382
+broad_bump_42_prune,Current broad-bump no lambda4,BroadBump42LogGaussAlpha1NoLambda2NoLambda4Aggressive.jl,0.9890236815901224,0.05411993894692659,0.011498700832981908,drop,Comparable total chi2 but clearly worse high-energy metrics,
+log_basis_42,xbar+quad+logpair broad bump,BroadBump42XbarQuadLogPair.jl,0.9888269278523444,0.052429633449994385,0.00994504634441625,drop,Interesting alternative basis but not cleaner than kept representatives,
+swap_round_42,Lorentz bump swap,BroadBump42SwapBumpLorentz.jl,0.9885110156458258,0.05225232851019996,0.010546630890866856,drop,Tiny chi2 gain but much worse conditioning,
+bump_reparam_42,Area-normalized Gaussian bump,BroadBump42AreaGauss.jl,0.988217276299028,0.053031362379311456,0.010701333060013966,drop,Slight chi2 gain only; high-energy metrics worse,
+bump_reparam_42,Area-normalized Lorentz bump,BroadBump42AreaLorentz.jl,0.9894976421056741,0.052554349553189515,0.010163497825975943,drop,No clear gain over current broad-bump best,
+bump_reparam_42,Fixed broad Gaussian basis,BroadBump42FixedGaussBasisBest.jl,0.9926019805815383,0.05144460360768787,0.0091078177643971,keep,Cleaner paper-facing alternative; better high-energy metrics and lower correlation,0.741626283717118

@@ -1,0 +1,3 @@
+model,label,n_total,chi2dN_total,chi2_total,highE_mean_absdev_first3,highE_mean_shortfall_first3,hessian_evals,grad_norm_log10,hessian_min_eig,hessian_max_eig
+poly_bstar_cslog_loggauss_reduced,Poly-x bstar + CSlog + loggauss reduced,465,0.8275756868258659,384.82269437402766,0.05145336085963513,0.010487428470880519,163,0.058789074441839714,4658.109752523446,1033330.5381151496
+poly_bstar_cslog_alpha1,Poly-x bstar + CSlog alpha=1,465,0.837168848605159,389.28351460139896,0.05296325874113318,0.01251247127328811,99,0.043386888919973714,-9986.168434521243,1076566.304993773

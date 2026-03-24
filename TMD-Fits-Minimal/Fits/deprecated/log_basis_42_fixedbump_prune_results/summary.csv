@@ -1,0 +1,2 @@
+reference_candidate,new_candidate,chi2dN_total_ref,chi2dN_total_new,delta_chi2dN_total,highE_absdev_ref,highE_absdev_new,delta_absdev,highE_shortfall_ref,highE_shortfall_new,delta_shortfall,fit_evals,fit_flag
+xbar_quad_logpair_fixedbump,xbar_quad_logpair_fixedbump_lambda4_zero_nested,0.988809009479701,0.988781511039745,-2.749843995597523e-05,0.052412088495004956,0.05241383996179324,1.7514667882828627e-06,0.00997208467550342,0.00995476079697192,-1.732387853149893e-05,233,0

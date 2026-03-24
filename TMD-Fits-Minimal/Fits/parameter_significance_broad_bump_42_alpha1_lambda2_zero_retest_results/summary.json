@@ -1,0 +1,17 @@
+{
+  "model": "broad_bump_42_alpha1_lambda2_zero_retest",
+  "label": "Broad bump 4-2, no lambda2 retest",
+  "fit_name": "BroadBump42LogGaussAlpha1NoLambda2",
+  "chi2dN_total": 0.9888837503947299,
+  "chi2_total": 459.8309439335494,
+  "highE_mean_absdev_first3": 0.05231768929846005,
+  "highE_mean_shortfall_first3": 0.009853291583811962,
+  "hessian_evals": 163,
+  "grad_norm_log10": 0.040932398522213226,
+  "hessian_min_eig": 982.4825924274402,
+  "hessian_max_eig": 1311128.4919332569,
+  "max_abs_corr": 0.9698408119183382,
+  "top_corr_param_i": "lambda1",
+  "top_corr_param_j": "lambda3",
+  "top_corr": -0.9698408119183382
+}

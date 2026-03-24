@@ -1,0 +1,17 @@
+{
+  "model": "fixed_gauss_basis_42",
+  "label": "Fixed broad Gaussian basis 4-2",
+  "fit_name": "BroadBump42FixedGaussBasis",
+  "chi2dN_total": 0.992603340838014,
+  "chi2_total": 461.5605534896765,
+  "highE_mean_absdev_first3": 0.05144458358474009,
+  "highE_mean_shortfall_first3": 0.009107827759434705,
+  "hessian_evals": 99,
+  "grad_norm_log10": 0.037982490930987337,
+  "hessian_min_eig": 18482.0306638388,
+  "hessian_max_eig": 1283399.4828595635,
+  "max_abs_corr": 0.741626283717118,
+  "top_corr_param_i": "lambda1",
+  "top_corr_param_j": "lambda3",
+  "top_corr": -0.741626283717118
+}
