@@ -17,7 +17,7 @@ inline float mustar_func(float b, float Q) {
 }
 
 typedef struct {
-  float lambda1, lambda2, lambda3;
+  float lambda1, lambda2, lambda3, lambda4, alpha;
   float logx0, sigx, amp;
   float BNP, c0, c1;
 } Params_Struct;
@@ -30,6 +30,8 @@ inline float2 NP_f_func(float x, float b, __constant Params_Struct* p)
   const float lambda1 = p->lambda1;
   const float lambda2 = p->lambda2;
   const float lambda3 = p->lambda3;
+  const float lambda4 = p->lambda4;
+  const float alpha = p->alpha;
   const float logx0 = p->logx0;
   const float sigx = p->sigx;
   const float amp = p->amp;
@@ -40,13 +42,17 @@ inline float2 NP_f_func(float x, float b, __constant Params_Struct* p)
   x = clampf(x, 1e-7f, 1.f - 1e-7f);
   float xbar = 1.f - x;
   float xxbar = x * xbar;
-  float base = lambda1 * log(x) + lambda2 * xbar + lambda3 * xxbar;
+  float base = lambda1 * xbar + lambda2 * x + lambda3 * xxbar + lambda4 * log(x);
 
   float u = (log(x) - logx0) / fmax(sigx, 1e-4f);
   float bump = amp * expf(-0.5f * u * u);
   float shape = base + bump;
 
-  float SNP_mu = sechf(shape * b);
+  float t = b / bmax;
+  float t2 = t * t;
+  float t4 = t2 * t2;
+  float bstar_mu = b * powr(1.f + t4, 0.25f * (alpha - 1.f));
+  float SNP_mu = sechf(shape * bstar_mu);
 
   float v = b / fmax(BNP, 1e-6f);
   float bstar = b / sqrtf(1.f + v * v);

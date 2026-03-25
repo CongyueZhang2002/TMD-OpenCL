@@ -1,0 +1,22 @@
+{
+  "candidate": "poly_bstar_cslog_loggauss_42broadsig",
+  "fit_name": "PolyBstarCSLogLogGauss42BroadSig",
+  "chi2dN_total": 0.9955017970027116,
+  "chi2dN_collider": 0.9169763747130949,
+  "chi2dN_fixed_target": 1.1013921391811345,
+  "highE_mean_absdev_first3": 0.050966386998233346,
+  "highE_mean_shortfall_first3": 0.009354390962454466,
+  "fit_evals": 5573,
+  "fit_elapsed_s": 458.53844760000004,
+  "lambda1": 0.3860723614324361,
+  "lambda2": 0.7721970210026478,
+  "lambda3": -2.600532617030665,
+  "lambda4": -0.08898275641380476,
+  "alpha": 1.7378624177743756,
+  "logx0": -6.265050330816701,
+  "sigx": 1.088547986752765,
+  "amp": -1.5158805883263997,
+  "BNP": 1.3660575468612706,
+  "c0": 0.07932999533978582,
+  "c1": 0.02509779784839354
+}

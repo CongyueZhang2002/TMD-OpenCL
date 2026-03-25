@@ -1,0 +1,17 @@
+{
+  "model": "broad_bump_42_fixed_gauss_basis_corrected",
+  "label": "BroadBump42FixedGaussBasisBest corrected",
+  "fit_name": "BroadBump42FixedGaussBasisBest",
+  "chi2dN_total": 1.01317439162988,
+  "chi2_total": 471.12609210789424,
+  "highE_mean_absdev_first3": 0.052110607170494753,
+  "highE_mean_shortfall_first3": 0.009116169184346686,
+  "hessian_evals": 99,
+  "grad_norm_log10": 0.017873443362517717,
+  "hessian_min_eig": 29664.926658322885,
+  "hessian_max_eig": 1389167.1255709433,
+  "max_abs_corr": 0.6809853639899599,
+  "top_corr_param_i": "lambda1",
+  "top_corr_param_j": "lambda4",
+  "top_corr": 0.6809853639899599
+}

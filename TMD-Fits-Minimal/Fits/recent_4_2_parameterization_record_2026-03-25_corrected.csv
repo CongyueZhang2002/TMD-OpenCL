@@ -1,0 +1,14 @@
+kind,name,status,chi2dN_total,highE_absdev,highE_shortfall,reason
+card,BroadBump42LogGaussAlpha1NoLambda2.jl,keep,1.007120,0.053682,0.010805,Current chosen broad-bump 4-2 model
+card,BroadBump42FixedGaussBasisBest.jl,keep,1.013174,0.052111,0.009116,Cleaner fixed-shape comparison model
+card,Art23FamilyMuPolyBstarCSLog42Best.jl,keep,1.029354,0.051938,0.010810,Best no-bump 4-2 representative
+card,PolyBstarCSLogLogGauss42BroadSig.jl,keep,0.995503,0.050966,0.009354,Best broad-sig sharp-family comparison
+card,PolyBstarCSLogLogGauss42Best.jl,archive,0.988362,0.053762,0.010487,Older narrow-bump sharp model superseded by BroadSig
+card,BroadBump42FixedGaussBasisLog1mX.jl,archive,1.012976,0.052064,0.009148,Extra log1mx freedom did not materially help
+card,BroadBump42FixedGaussBasisBest__SignificanceTmp.jl,archive,,,,Temporary significance worker card
+card,BroadBump42LogGaussAlpha1NoLambda2__SignificanceTmp.jl,archive,,,,Temporary significance worker card
+card,PolyBstarCSLogLogGauss42BroadSig__SignificanceTmp.jl,archive,,,,Temporary significance worker card
+kernel,NP-BroadBump42FixedGaussBasisLog1mX.cl,archive,,,,No kept card depends on it
+kernel,NP-BroadBump42FixedGaussBasisLog1mX.jl,archive,,,,No kept card depends on it
+kernel,NP-BroadBump42LogGaussW060Alpha1.cl,archive,,,,Superseded by dedicated no-lambda2 kernel
+kernel,NP-BroadBump42LogGaussW060Alpha1.jl,archive,,,,Superseded by dedicated no-lambda2 kernel

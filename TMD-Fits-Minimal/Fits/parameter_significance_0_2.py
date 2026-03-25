@@ -17,7 +17,14 @@ import pandas as pd
 import pybobyqa
 
 from auto_np_search import CARDS_DIR, FITS_DIR, NP_DIR, CandidateSpec, FitSession
-from scan_table_variants import mustar_function_src
+
+try:
+    from scan_table_variants import mustar_function_src
+except ModuleNotFoundError:
+    deprecated_scripts = Path(__file__).resolve().parent / "deprecated" / "scripts"
+    if str(deprecated_scripts) not in sys.path:
+        sys.path.append(str(deprecated_scripts))
+    from scan_table_variants import mustar_function_src
 
 
 ROOT = Path(__file__).resolve().parents[1]

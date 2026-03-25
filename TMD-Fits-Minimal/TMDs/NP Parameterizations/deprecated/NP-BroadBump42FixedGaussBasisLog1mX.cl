@@ -9,12 +9,17 @@
 #define sqrtf(x) sqrt(x)
 
 inline float mustar_func(float b, float Q) {
-    float mu = bmax / b;
+    float t = b / bmax;
+    float t2 = t * t;
+    float t4 = t2 * t2;
+    float denom = sqrt(sqrt(1.0f + t4));
+    float bstar = b / denom;
+    float mu = bmax / bstar;
     return max(mu, 1.0f);
 }
 
 typedef struct {
-  float lambda1, lambda3, lambda4, alpha, amp, BNP, c0, c1;
+  float lambda1, lambda3, lambda4, lambda5, alpha, amp, BNP, c0, c1;
 } Params_Struct;
 
 inline float clampf(float x, float lo, float hi) { return fmin(fmax(x, lo), hi); }
@@ -25,6 +30,7 @@ inline float2 NP_f_func(float x, float b, __constant Params_Struct* p)
   const float lambda1 = p->lambda1;
   const float lambda3 = p->lambda3;
   const float lambda4 = p->lambda4;
+  const float lambda5 = p->lambda5;
   const float alpha = p->alpha;
   const float amp = p->amp;
   const float BNP = p->BNP;
@@ -35,7 +41,8 @@ inline float2 NP_f_func(float x, float b, __constant Params_Struct* p)
   float xbar = 1.f - x;
   float xxbar = x * xbar;
   float logx = log(x);
-  float base = lambda1 * xbar + lambda3 * xxbar + lambda4 * logx;
+  float log1mx = log(1.f - x);
+  float base = lambda1 * xbar + lambda3 * xxbar + lambda4 * logx + lambda5 * log1mx;
   float u = (logx - FIXED_LOGX0) / FIXED_SIGX;
   float bump = amp * expf(-0.5f * u * u);
   float shape = base + bump;

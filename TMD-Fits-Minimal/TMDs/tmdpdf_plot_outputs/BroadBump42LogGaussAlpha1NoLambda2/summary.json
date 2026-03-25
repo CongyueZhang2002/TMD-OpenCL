@@ -1,0 +1,36 @@
+{
+  "fit_name": "BroadBump42LogGaussAlpha1NoLambda2",
+  "param_names": [
+    "lambda1",
+    "lambda2",
+    "lambda3",
+    "logx0",
+    "sigx",
+    "amp",
+    "BNP",
+    "c0",
+    "c1"
+  ],
+  "params": [
+    0.0236556296821,
+    1.05429074326,
+    -2.35436517027,
+    -5.20770348493,
+    1.10327361303,
+    -0.431106120424,
+    1.49466480684,
+    0.0700126619978,
+    0.0276366621819
+  ],
+  "map_plot_flavor": "u",
+  "map_x_values": [
+    0.001,
+    0.01,
+    0.1
+  ],
+  "map_Q_values": [
+    2.0,
+    10.0
+  ],
+  "surface_Q": 4.75
+}

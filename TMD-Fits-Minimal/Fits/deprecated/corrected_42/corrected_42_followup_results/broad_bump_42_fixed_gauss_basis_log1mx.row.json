@@ -1,0 +1,20 @@
+{
+  "candidate": "broad_bump_42_fixed_gauss_basis_log1mx",
+  "fit_name": "BroadBump42FixedGaussBasisLog1mX",
+  "chi2dN_total": 1.0129761039152254,
+  "chi2dN_collider": 0.9461243870335315,
+  "chi2dN_fixed_target": 1.1031246312253882,
+  "highE_mean_absdev_first3": 0.05206369174578047,
+  "highE_mean_shortfall_first3": 0.009147877637749305,
+  "fit_evals": 5336,
+  "fit_elapsed_s": 435.13384440000004,
+  "lambda1": 1.0429717243447088,
+  "lambda3": -2.206917149878395,
+  "lambda4": 0.053101417385621685,
+  "lambda5": -0.04999438170443249,
+  "alpha": 1.0,
+  "amp": -0.25833316145873386,
+  "BNP": 1.486015590063408,
+  "c0": 0.07094203948688677,
+  "c1": 0.026705944492286547
+}

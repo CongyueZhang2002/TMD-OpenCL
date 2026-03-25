@@ -1,0 +1,18 @@
+kind,name,status,chi2dN_total,highE_absdev,highE_shortfall,reason,destination
+card,BroadBump42LogGaussAlpha1NoLambda2.jl,keep,1.007120,0.053682,0.010805,Current chosen corrected 4-2 model,
+card,Art23FamilyMuPolyBstarCSLog42Best.jl,keep,1.029354,0.051938,0.010810,No-bump 4-2 reference kept for comparison,
+card,BroadBump42FixedGaussBasisBest.jl,archive,1.013174,0.052111,0.009116,Fixed-shape bump requires hard-coded center/width and is not the active paper-facing parameterization,Cards/deprecated/corrected_42
+card,PolyBstarCSLogLogGauss42BroadSig.jl,archive,0.995503,0.050966,0.009354,Highly correlated and still produced structured small-x TMD shapes,Cards/deprecated/corrected_42
+kernel,NP-BroadBump42FixedGaussBasis.cl,archive,,,,Only used by archived fixed-shape corrected 4-2 card,TMDs/NP Parameterizations/deprecated/corrected_42
+kernel,NP-BroadBump42FixedGaussBasis.jl,archive,,,,Only used by archived fixed-shape corrected 4-2 card,TMDs/NP Parameterizations Julia/deprecated/corrected_42
+kernel,NP-PolyBstarCSLogLogGauss42Best.cl,archive,,,,Only used by archived sharp-family corrected 4-2 cards,TMDs/NP Parameterizations/deprecated/corrected_42
+kernel,NP-PolyBstarCSLogLogGauss42Best.jl,archive,,,,Only used by archived sharp-family corrected 4-2 cards,TMDs/NP Parameterizations Julia/deprecated/corrected_42
+fit_bundle,corrected_42_followup_results,archive,,,,Broad-sig and fixed-shape follow-up refits only,Fits/deprecated/corrected_42
+fit_bundle,corrected_42_variant_refit_results,archive,,,,Fixed-shape corrected refit and older sharp corrected refresh only,Fits/deprecated/corrected_42
+fit_bundle,bump_reparam_42_results,archive,,,,Fixed-shape bump-reparameterization search outputs only,Fits/deprecated/corrected_42
+fit_bundle,parameter_significance_broad_bump_42_fixed_gauss_basis_corrected_results,archive,,,,Fixed-shape significance outputs only,Fits/deprecated/corrected_42
+fit_bundle,parameter_significance_fixed_gauss_basis_42_results,archive,,,,Older fixed-shape significance outputs only,Fits/deprecated/corrected_42
+fit_bundle,parameter_significance_poly_bstar_cslog_loggauss_42broadsig_results,archive,,,,Broad-sig significance outputs only,Fits/deprecated/corrected_42
+script,bump_reparam_42_search.py,archive,,,,Search driver for the archived fixed-shape branch only,Fits/deprecated/scripts
+script,corrected_42_followup_refit.py,archive,,,,Driver for archived follow-up branch only,Fits/deprecated/scripts
+script,deep_refit_corrected_42_variants.py,archive,,,,Driver for archived corrected-variant branch only,Fits/deprecated/scripts

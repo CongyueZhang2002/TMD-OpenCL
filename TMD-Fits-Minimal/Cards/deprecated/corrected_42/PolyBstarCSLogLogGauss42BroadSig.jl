@@ -3,12 +3,14 @@
 #----------------------------------------------------------------------------
 
 const flavor_scheme = "FI"
-const NP_name = "NP-BroadBump42LogGaussAlpha1NoLambda2.cl"
+const NP_name = "NP-PolyBstarCSLogLogGauss42Best.cl"
 
 struct Params_Struct
     lambda1::Float32
     lambda2::Float32
     lambda3::Float32
+    lambda4::Float32
+    alpha::Float32
     logx0::Float32
     sigx::Float32
     amp::Float32
@@ -17,15 +19,17 @@ struct Params_Struct
     c1::Float32
 end
 
-initial_params = [0.04375743605, 0.9774184714, -1.960659735, -4.99216975, 0.717326296, -0.338498232, 1.455523349, 0.0717885484, 0.02583083271]
+initial_params = [0.531249643213, 0.413141718333, -1.93153074017, -0.0258091786717, 1.54936094361, -4.66104722421, 0.6, -1.33488520846, 1.37945750418, 0.0730847627557, 0.0258122860952]
 
 bounds_raw = [
-    (-0.5, 0.5),
+    (0.02, 8),
     (0.02, 8),
     (-10, 10),
+    (-0.5, 0.5),
+    (0, 2),
     (-9.210340372, -1.203972804),
     (0.6, 2.5),
-    (-3, 3),
+    (-2, 2),
     (0.4, 4.5),
     (0, 0.25),
     (0, 0.25)

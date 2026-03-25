@@ -1,0 +1,17 @@
+{
+  "model": "poly_bstar_cslog_loggauss_42broadsig",
+  "label": "PolyBstarCSLogLogGauss42BroadSig",
+  "fit_name": "PolyBstarCSLogLogGauss42BroadSig",
+  "chi2dN_total": 0.9955026309156156,
+  "chi2_total": 462.90872337576127,
+  "highE_mean_absdev_first3": 0.0509663260069472,
+  "highE_mean_shortfall_first3": 0.009354383217633747,
+  "hessian_evals": 243,
+  "grad_norm_log10": 0.060735816344586156,
+  "hessian_min_eig": -10257.56779033351,
+  "hessian_max_eig": 1824423.8115568277,
+  "max_abs_corr": 0.9995816561541432,
+  "top_corr_param_i": "lambda3",
+  "top_corr_param_j": "c1",
+  "top_corr": -0.9995816468198124
+}

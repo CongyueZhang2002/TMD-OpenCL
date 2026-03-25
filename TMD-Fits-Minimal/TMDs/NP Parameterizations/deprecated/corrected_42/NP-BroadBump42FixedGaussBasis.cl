@@ -1,20 +1,25 @@
 #define bmax 1.1229189f
 #define xh   0.1f
 #define Q0   1.0f
+#define FIXED_LOGX0 (-4.605170186f)
+#define FIXED_SIGX (0.8f)
 
 #define expf(x) exp(x)
 #define powf(x,y) pow(x,y)
 #define sqrtf(x) sqrt(x)
 
 inline float mustar_func(float b, float Q) {
-    float mu = bmax / b;
+    float t = b / bmax;
+    float t2 = t * t;
+    float t4 = t2 * t2;
+    float denom = sqrt(sqrt(1.0f + t4));
+    float bstar = b / denom;
+    float mu = bmax / bstar;
     return max(mu, 1.0f);
 }
 
 typedef struct {
-  float lambda1, lambda2, lambda3, lambda4, alpha;
-  float logx0, sigx, amp;
-  float BNP, c0, c1;
+  float lambda1, lambda3, lambda4, alpha, amp, BNP, c0, c1;
 } Params_Struct;
 
 inline float clampf(float x, float lo, float hi) { return fmin(fmax(x, lo), hi); }
@@ -23,12 +28,9 @@ inline float sechf(float t) { t = fabs(t); float v = exp(-2.f * t); return (2.f 
 inline float2 NP_f_func(float x, float b, __constant Params_Struct* p)
 {
   const float lambda1 = p->lambda1;
-  const float lambda2 = p->lambda2;
   const float lambda3 = p->lambda3;
   const float lambda4 = p->lambda4;
   const float alpha = p->alpha;
-  const float logx0 = p->logx0;
-  const float sigx = p->sigx;
   const float amp = p->amp;
   const float BNP = p->BNP;
   const float c0 = p->c0;
@@ -37,9 +39,9 @@ inline float2 NP_f_func(float x, float b, __constant Params_Struct* p)
   x = clampf(x, 1e-7f, 1.f - 1e-7f);
   float xbar = 1.f - x;
   float xxbar = x * xbar;
-  float base = lambda1 * xbar + lambda2 * x + lambda3 * xxbar + lambda4 * log(x);
-
-  float u = (log(x) - logx0) / fmax(sigx, 1e-4f);
+  float logx = log(x);
+  float base = lambda1 * xbar + lambda3 * xxbar + lambda4 * logx;
+  float u = (logx - FIXED_LOGX0) / FIXED_SIGX;
   float bump = amp * expf(-0.5f * u * u);
   float shape = base + bump;
 

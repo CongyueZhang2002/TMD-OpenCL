@@ -1,0 +1,63 @@
+#----------------------------------------------------------------------------
+# NP
+#----------------------------------------------------------------------------
+
+const flavor_scheme = "FI"
+const NP_name = "NP-BroadBump42LogGaussAlpha1NoLambda2.cl"
+
+struct Params_Struct
+    lambda1::Float32
+    lambda2::Float32
+    lambda3::Float32
+    logx0::Float32
+    sigx::Float32
+    amp::Float32
+    BNP::Float32
+    c0::Float32
+    c1::Float32
+end
+
+initial_params = [0.0236556296821, 1.05429074326, -2.35436517027, -5.20770348493, 1.10327361303, -0.431106120424, 1.49466480684, 0.0700126619978, 0.0276366621819]
+
+bounds_raw = [
+    (-0.5, 0.5),
+    (0.02, 8),
+    (-10, 10),
+    (-9.210340372, -1.203972804),
+    (0.6, 2.5),
+    (-3, 3),
+    (0.4, 4.5),
+    (0, 0.25),
+    (0, 0.25)
+]
+
+# ML-oriented box for surrogate training / uncertainty propagation.
+# Obtained from replica_0325.csv using all replicas, taking the 1-99%
+# percentile range, adding 25% padding, and clipping back to bounds_raw.
+bounds_ML = [
+    (-0.120237, 0.262807),
+    (0.477749, 1.705353),
+    (-4.266860, -0.624176),
+    (-6.236660, -3.746442),
+    (0.6, 1.537589),
+    (-1.306501, 0.139441),
+    (1.009461, 2.053622),
+    (0.053037, 0.091445),
+    (0.0, 0.062803)
+]
+
+frozen_indices = []
+
+#----------------------------------------------------------------------------
+# PDF
+#----------------------------------------------------------------------------
+
+const table_name = "MSHT20N3LO-MC-4-2"
+const pdf_name = "approximate"
+const error_sets_name = "MSHT20N3LO-MC"
+
+#----------------------------------------------------------------------------
+# Data Set
+#----------------------------------------------------------------------------
+
+const data_name = "Default"
