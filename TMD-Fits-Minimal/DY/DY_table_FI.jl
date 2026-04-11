@@ -136,6 +136,34 @@ end
 set_params(VRAM, Params) 
 
 #---------------------------------------------------------------------------------------------------------------------
+#   Exit handling
+#---------------------------------------------------------------------------------------------------------------------
+
+const OPENCL_EXIT_DISARMED = Ref(false)
+
+function _disarm_opencl_value!(value)
+    if value isa CLArray
+        try
+            OpenCL.GPUArrays.storage(value).freed = true
+        catch
+        end
+    end
+    nothing
+end
+
+function disarm_opencl_exit!()
+    OPENCL_EXIT_DISARMED[] && return nothing
+    OPENCL_EXIT_DISARMED[] = true
+
+    @inbounds for buffer in VRAM
+        foreach(_disarm_opencl_value!, values(buffer))
+    end
+    nothing
+end
+
+atexit(disarm_opencl_exit!)
+
+#---------------------------------------------------------------------------------------------------------------------
 #   Xsec
 #---------------------------------------------------------------------------------------------------------------------
 
@@ -147,7 +175,6 @@ function xsec_dict(rel_paths::Vector{String}, VRAM::Vector{VRAM_Struct};
     lmem = cl.LocalMem(Float32, local_size)
 
     t_compute = @elapsed begin
-
         @inbounds for buffer in VRAM
             fill!(buffer.xsec, 0f0)
             n  = Int(buffer.dim)
@@ -171,6 +198,15 @@ function xsec_dict(rel_paths::Vector{String}, VRAM::Vector{VRAM_Struct};
 
         end
         cl.finish(cl.queue())
+    end
+
+    try
+        cl.finish(cl.queue())
+    catch
+    end
+    try
+        finalize(DY_xsec)
+    catch
     end
 
     xsecs = map(buffer -> Array(buffer.xsec)[1], VRAM)

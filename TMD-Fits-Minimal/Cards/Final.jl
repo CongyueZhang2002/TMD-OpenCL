@@ -17,7 +17,8 @@ struct Params_Struct
     c1::Float32
 end
 
-initial_params = [0.0236556296821, 1.05429074326, -2.35436517027, -5.20770348493, 1.10327361303, -0.431106120424, 1.49466480684, 0.0700126619978, 0.0276366621819]
+#initial_params = [0.0236556296821, 1.05429074326, -2.35436517027, -5.20770348493, 1.10327361303, -0.431106120424, 1.49466480684, 0.0700126619978, 0.0276366621819]
+initial_params = [0.00315, 0.986, -2.04, -4.3, 1.23, -0.274, 1.49, 0.0665, 0.0301]
 
 bounds_raw = [
     (-0.5, 0.5),
@@ -34,7 +35,7 @@ bounds_raw = [
 # ML-oriented box for surrogate training / uncertainty propagation.
 # Obtained from replica_0325.csv using all replicas, taking the 1-99%
 # percentile range, adding 25% padding, and clipping back to bounds_raw.
-bounds_ML = [
+bounds_ML_old = [
     (-0.120237, 0.262807),
     (0.477749, 1.705353),
     (-4.266860, -0.624176),
@@ -46,15 +47,28 @@ bounds_ML = [
     (0.0, 0.062803)
 ]
 
+bounds_ML_new = [
+    (-0.081529, 0.071792),
+    (0.651027, 1.310074),
+    (-2.877643, -1.406536),
+    (-5.491921, -3.485856),
+    (0.6, 1.833765),
+    (-0.627773, -0.130369),
+    (1.178258, 1.929723),
+    (0.056201, 0.076834),
+    (0.020484, 0.044940),
+]
+
+
 frozen_indices = []
 
 #----------------------------------------------------------------------------
 # PDF
 #----------------------------------------------------------------------------
 
-const table_name = "MSHT20N3LO-MC-4-2"
+const table_name = "MSHT20N3LO-MC-Final"
 const pdf_name = "approximate"
-const error_sets_name = "MSHT20N3LO-MC"
+const error_sets_name = "MSHT20N3LO-MC-Final"
 
 #----------------------------------------------------------------------------
 # Data Set

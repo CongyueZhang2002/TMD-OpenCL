@@ -1,3 +1,9 @@
+# Ignore everything at the repo root except the project directory.
+/*
+!/.gitignore
+!/TMD-Fits-Minimal/
+!/TMD-Fits-Minimal/**
+
 # large generated tables
 TMD-Fits-Minimal/Tables/
 TMD-Fits-Minimal/Tables_JLD2/
